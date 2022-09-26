@@ -23,11 +23,11 @@ app.get("/", (req, res) => {
 
 
 app.get("/about", (req, res) => {
-  res.render("about", { startingContent: aboutContent })
+  res.render("about", { aboutContent: aboutContent })
 })
 
 app.get("/contact", (req, res) => {
-  res.render("contact", { startingContent: contactContent })
+  res.render("contact", { contactContent: contactContent })
 })
 
 
