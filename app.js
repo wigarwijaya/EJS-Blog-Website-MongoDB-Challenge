@@ -17,6 +17,8 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 
+let posts = [];
+
 app.get("/", (req, res) => {
   res.render("home", { startingContent: homeStartingContent, });
 })
@@ -39,6 +41,8 @@ app.post("/compose", (req, res) => {
     title: req.body.postTitle,
     content: req.body.postBody
   };
+  posts.push(post);
+  res.redirect("/");
 })
 
 
