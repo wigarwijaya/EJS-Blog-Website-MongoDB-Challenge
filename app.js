@@ -47,8 +47,9 @@ app.post("/compose", (req, res) => {
   res.redirect("/");
 })
 
-
-
+app.get("/post/:userPost", (req, res) => {
+  console.log(req.params.userPost);
+})
 
 
 
