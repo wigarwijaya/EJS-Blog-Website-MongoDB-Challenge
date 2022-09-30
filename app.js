@@ -58,12 +58,12 @@ app.get("/post/:postName", (req, res) => {
     // console.log(storedTitle);
     if (requestedTitle === storedTitle){
       console.log("Match found!");
+      res.render("post", { title: post.title, content: post.content })
     } else {
       console.log("Not a match!")
     }
   })
 })
-
 
 
 
