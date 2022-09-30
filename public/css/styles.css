@@ -1,7 +1,12 @@
 .container-fluid {
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding: 10px 30px;
 }
+
+.container {
+    min-height: 100vh;
+    position: relative;
+}
+
 .navbar {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -15,17 +20,17 @@
     color: #1abc9c !important;
 }
 
-.footer-padding {
+/* .footer-padding {
 	padding-bottom: 60px;
-}
+} */
 
 .footer {
-	position: absolute;
+	position: relative;
 	/* text-align: center; */
     display: flex;
     align-items: center;
     justify-content: center;
-	bottom: 0;
+	/* bottom: 0; */
 	width: 100%;
 	height: 90px;
 	background-color: #1abc9c;
