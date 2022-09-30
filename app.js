@@ -25,7 +25,8 @@ let posts = [];
 app.get("/", (req, res) => {
   res.render("home", { 
     startingContent: homeStartingContent,
-    newPost: posts });
+    newPost: posts,
+  });
 })
 
 
