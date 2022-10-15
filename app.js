@@ -40,15 +40,6 @@ app.get("/", (req, res) => {
   })
 })
 
-
-app.get("/about", (req, res) => {
-  res.render("about", { aboutContent: aboutContent })
-})
-
-app.get("/contact", (req, res) => {
-  res.render("contact", { contactContent: contactContent })
-})
-
 app.get("/compose", (req, res) => {
   res.render("compose")
 })
@@ -73,6 +64,14 @@ app.get("/post/:postId", (req, res) => {
     res.render("post", { title: post.title, content: post.content })
   });
 });
+
+app.get("/about", (req, res) => {
+  res.render("about", { aboutContent: aboutContent })
+})
+
+app.get("/contact", (req, res) => {
+  res.render("contact", { contactContent: contactContent })
+})
 
 
 app.listen(port, function() {
